@@ -1,0 +1,51 @@
+.buyorsell{
+  height: 100vh;
+  background-color: rgb(207, 218, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.buyorsell__column{
+  color: white;
+  width: 30vw;
+  height: 30vw;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  border: 1px solid white;
+  border-radius: 10000px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  a{
+    font-size: 4rem;
+    z-index: 100;
+    text-decoration: none;;
+    color: white;
+  }
+}
+
+
+
+.buyorsell__image-wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 400ms ease-in-out;
+  }
+
+  img:hover{
+    scale: 1.1
+  }
+}
